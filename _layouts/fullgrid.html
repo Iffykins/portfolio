@@ -1,0 +1,155 @@
+---
+layout: default
+---
+
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+
+<div class="content">
+  {{ content }}
+</div>
+{% include back-link.html %}
+
+<body>
+  <style>
+
+/* reset for out of date browsers */
+
+    html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+/* mobile version */
+
+.flex-container {
+  max-width: 1200px;
+  justify-content: center;
+  padding: 0 1rem;
+  margin-bottom: 1rem;
+}
+
+.responsive-image {
+  max-width: 100%;
+}
+.cell img {
+  display: block;
+  margin: 0 0 1rem;
+}
+
+.illuscell {
+  display: block;
+  margin: 0 0 1rem;
+}
+
+.titleimage {
+  display: none;
+}
+
+.pagetext{
+  margin: 0 1rem 1rem;
+  height: 70px;
+  max-width:100%;
+  text-align: center;
+  word-break: break-all;
+    }
+
+    h2 {
+      margin-top: auto;
+      margin-bottom: auto;
+      height: 100%;
+      width: 100%;
+      word-break: break-all;
+      color: #5C5C5C;
+    }
+
+    hr.flex-container {
+          border: 0px solid #929292; border-bottom-width: 1px; width:60%; margin:30px 15% 40px;
+        }
+
+
+/* tablet version */
+
+@media screen and (min-width: 600px) {
+
+  .grid {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+
+  }
+
+  .fourgrid {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+     justify-content: center;
+  }
+
+  .cell {
+    width: calc(50% - 2rem);
+    margin: 0 1rem 1rem;
+  }
+
+  .illuscell {
+    width: calc(50% - 2rem);
+    margin: 0 1rem 1rem;
+  }
+
+  .titleimage {
+    display: block;
+    margin-bottom: 1rem;
+    width: 40%;
+  }
+
+  hr.flex-container{
+        border: 0px solid #929292; border-bottom-width: 1px; width:60%; margin:30px auto 40px;
+      }
+
+}
+
+
+/* desktop version */
+
+@media screen and (min-width: 1025px) {
+
+  .grid {
+    display: flex;
+    min-width: 1010px;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .cell {
+    width: calc(33.3333% - 2rem);
+    margin: 0 1rem 1rem;
+  }
+
+  .fourgrid {
+          display: flex;
+          min-width: 1010px;
+          flex-wrap: nowrap;
+          flex-direction: row;
+          justify-content: center;
+  }
+
+  .pagetext{
+    margin: 0 1rem 1rem;
+    min-width:960px;
+    text-align: center;
+    word-break: break-all;
+      }
+
+      hr.flex-container{
+            border: 0px solid #929292; border-bottom-width: 1px; width:60%; margin:30px 37% 40px;
+          }
+
+}
+</style>
+</body>

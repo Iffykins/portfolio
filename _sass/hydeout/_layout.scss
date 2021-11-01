@@ -62,6 +62,7 @@ body {
   > .content {
     flex-grow: 1;
     padding-bottom: $section-spacing * 2;
+
   }
 }
 
@@ -202,10 +203,7 @@ body {
     background: $body-bg;
     color: $body-color;
     min-height: 100vh;
-    padding:
-      $section-spacing * 2
-      $section-spacing * 2
-      0;
+    padding: 3%;
 
     @if $layout-reverse {
       margin-right: $sidebar-width;
@@ -242,6 +240,8 @@ body {
 
 #sidebar a {
   color: $sidebar-link-color;
+  opacity: 1;
+  transition: 250ms ease-in-out;
 
   svg {
     fill: $sidebar-icon-color;
@@ -256,7 +256,9 @@ body {
 
 #sidebar a:hover,
 #sidebar a:focus {
-  text-decoration: underline;
+  // text-decoration: underline;
+  opacity: .5;
+  transition: 250ms ease-in-out;
 
   &.icon {
     text-decoration: none;
@@ -265,11 +267,14 @@ body {
 
 #sidebar a.active {
   font-weight: bold;
+  color: #35AFA1;
 }
 
 #sidebar .site-title {
   color: $sidebar-title-color;
   a { color: inherit; }
+
+
 }
 
 #sidebar nav {
