@@ -16,7 +16,7 @@ baseurl:          '/portfolio'
 
 author:
   name:           'Jos Venti'
-  url:            https://twitter.com/iffykins
+  url:            https://bsky.app/profile/iffykins.bsky.social
 
 #paginate:         1
 # paginate_path:    '/page:num'
