@@ -57,6 +57,15 @@ layout: default
             .responsive-image {
               max-width: 100%;
             }
+            .revcontainer {
+              display: flex;
+              flex-wrap: no wrap;
+              flex-direction: column;
+              margin: auto;
+              max-width: 1200px;
+              justify-content: center;
+              margin-bottom: 2re;
+            }
 
 
 /* tablet version */
@@ -105,12 +114,12 @@ layout: default
   flex-wrap: nowrap;
   width: auto;
   max-height: auto;
-  margin-bottom: -4rem;
+
     }
 
 .grid {
       display: flex;
-      /* min-width: 1010px; */
+      /* min-width: 1050px; */
       flex-wrap: wrap;
       flex-direction: row;
       justify-content: center;
@@ -123,17 +132,16 @@ layout: default
 
 .image {
   display: flex;
-  min-width: 45%;
-  padding: 1em;
+  max-width: 500px;
+
   margin: auto;
     }
 
     .text{
       color: #5C5C5C;
-      margin: -2rem 1rem 0;
+      margin: auto;
       font-size: min(17px,2vw);
       max-width:50%;
-      padding: 1em;
       text-align: left;
       word-break: break-word;
         }
@@ -143,9 +151,14 @@ layout: default
             }
 
             .revcontainer {
-              max-width: 1200px;
+              display: flex;
+              flex-wrap: no wrap;
+              flex-direction: row;
+              margin: auto;
+
               justify-content: center;
-              margin-bottom: -6rem;
+
             }
+
   }
 </style>
